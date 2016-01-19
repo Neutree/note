@@ -1,28 +1,24 @@
 Eclipse stm32 编辑 编译 下载 调试 （ ST-Link J-Link ） 环境搭建 
 =========================
 
-# （一）下载
-
-1. <a target="_blank" href="http://www.eclipse.org/downloads">下载Eclipse IDE for C/C++ Developers 环境</a>
-
-2. <a target="_blank" href="http://sourceforge.net/projects/gnuarmeclipse">下载GNU ARM Eclipse Plug-in最新版本</a> <br/>
-* <a target="_blank" href="http://gnuarmeclipse.github.io">插件wiki</a>
-
-3. 工具链 ，GNU ARM Eclipse Plug-in 插件支持的工具链有很多，如下<br/>
-![](./asset/0e2aed80-a2c6-472f-ad8d-38c0196822ef.png)<br/>
-比如[第一个](https://launchpad.net/gcc-arm-embedded)：！！！！！！不带make，所以用这个还需要下载一个make功能的软件（识别makefile）
-<br/>或者 [sourcery g++ lite 的EABI版本](http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite) ，不用再下载make，自带，不过名字不是make，是cs-make
-
-
-# (二)基本安装
+# （一）下载和安装
 
 1. 安装java、配置环境变量
-2. 解压Eclipse，安装GNU ARM plug in（在Help-->Install New Software）（参见<a target="_blank" href="http://gnuarmeclipse.github.io/plugins/install/">这里</a>）
+2. <a target="_blank" href="http://www.eclipse.org/downloads">下载Eclipse IDE for C/C++ Developers 环境</a>
+3. 解压Eclipse， <a target="_blank" href="http://sourceforge.net/projects/gnuarmeclipse">下载GNU ARM Eclipse Plug-in最新版本</a> <br/><br/>
+* <a href="https://github.com/gnuarmeclipse" target="_blank">github组织地址</a><br/>
+* <a target="_blank" href="http://gnuarmeclipse.github.io">插件wiki</a>(建议直接看这个，导航在右边)（<a href="http://gnuarmeclipse.github.io/plugins/install/">如何安装插件</a>）
 ![](./asset/bfecdeff-f3e2-42a8-8e14-c83c6749ccbe.png)
 ![](./asset/d4cec48a-adf6-43ab-aaf7-031dedf341d2.png)
 
+4. 工具链 ，GNU ARM Eclipse Plug-in 插件支持的工具链有很多，如下<br/>
+![](./asset/0e2aed80-a2c6-472f-ad8d-38c0196822ef.png)<br/>
+比如[ GCC ARM Embedded ](https://launchpad.net/gcc-arm-embedded)（[安装教程](http://gnuarmeclipse.github.io/toolchain/install/)）不要设置环境变量！！！！！！不带make，所以用这个还需要下载一个make功能的软件（识别makefile）
+<br/>或者 [sourcery g++ lite 的EABI版本](http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite) ，不用再下载make，自带，不过名字不是make，是cs-make
+5. [安装build工具](http://gnuarmeclipse.github.io/windows-build-tools/install/)（make等）
+6. [调试器软件安装](http://gnuarmeclipse.github.io/debug/install/)（[J-Link](http://gnuarmeclipse.github.io/debug/jlink/install/)）
 
-# （三）建立工程
+# （二）建立工程
 
 1. ![](./asset/c4bf5b79-01ab-4b55-b564-8bab7e399224.png)
 2.  在trace output选择semihosting，就可以在Eclipse的控制台中打印调试信息了![](./asset/2ebaf969-27af-47b3-9b4f-7ee67b617fde.png)
@@ -47,7 +43,7 @@ Eclipse stm32 编辑 编译 下载 调试 （ ST-Link J-Link ） 环境搭建
 <br/>其它设置，参照模板内的，如果自己建新的空工程
 
 
-# （四）下载、调试
+# （三）下载、调试
 
 ### ST-Link
 * 下载
