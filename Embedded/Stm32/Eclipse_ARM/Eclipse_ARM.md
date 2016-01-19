@@ -1,4 +1,4 @@
-Eclipse stm32 编辑 编译 下载 调试 （ ST-Link J-Link ） 环境搭建 
+Eclipse stm32 编辑 编译 下载 调试 （ ST-Link J-Link ） 环境搭建 （使用GNU ARM Eclipse）
 =========================
 
 # 说明
