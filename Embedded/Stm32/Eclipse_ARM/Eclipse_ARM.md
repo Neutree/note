@@ -6,8 +6,8 @@ Eclipse stm32 编辑 编译 下载 调试 （ ST-Link J-Link ） 环境搭建
 1. 安装java、配置环境变量
 2. <a target="_blank" href="http://www.eclipse.org/downloads">下载Eclipse IDE for C/C++ Developers 环境</a>
 3. 解压Eclipse， <a target="_blank" href="http://sourceforge.net/projects/gnuarmeclipse">下载GNU ARM Eclipse Plug-in最新版本</a> <br/><br/>
-* <a href="https://github.com/gnuarmeclipse" target="_blank">github组织地址</a><br/>
-* <a target="_blank" href="http://gnuarmeclipse.github.io">插件wiki</a>(建议直接看这个，导航在右边)（<a href="http://gnuarmeclipse.github.io/plugins/install/">如何安装插件</a>）
+  * <a href="https://github.com/gnuarmeclipse" target="_blank">github组织地址</a><br/>
+  * <a target="_blank" href="http://gnuarmeclipse.github.io">插件wiki</a>(建议直接看这个，导航在右边)（<a href="http://gnuarmeclipse.github.io/plugins/install/">如何安装插件</a>）
 ![](./asset/bfecdeff-f3e2-42a8-8e14-c83c6749ccbe.png)
 ![](./asset/d4cec48a-adf6-43ab-aaf7-031dedf341d2.png)
 
