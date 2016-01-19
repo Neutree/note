@@ -1,6 +1,12 @@
 Eclipse stm32 编辑 编译 下载 调试 （ ST-Link J-Link ） 环境搭建 
 =========================
 
+# 说明
+
+使用GNU ARM Eclipse plug来简化一系列的操作<br/>所以主要教程来自于<a target="_blank" href="http://gnuarmeclipse.github.io">GNU ARM Eclipse wiki</a><br/>建议直接看这个，下面是安装的时候的笔记
+
+
+
 # （一）下载和安装
 
 1. 安装java、配置环境变量
@@ -33,7 +39,7 @@ Eclipse stm32 编辑 编译 下载 调试 （ ST-Link J-Link ） 环境搭建
 ![](./asset/72849c26-916d-49a1-8fab-74b76e0a0dfb.png)）
 安装完后可以设置环境变量，最终在控制台输入 make -v 能看到make的版本信息为止（插件官方不推荐）
 或者在Eclipse中设置build path，如下图
-
+![](./asset/20160119234101.png)
 
 然后进行编译，如果步骤没错，就可以了
 5. 工程设置：
