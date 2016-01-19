@@ -40,7 +40,6 @@ Eclipse stm32 编辑 编译 下载 调试 （ ST-Link J-Link ） 环境搭建 �
 安装完后可以设置环境变量，最终在控制台输入 make -v 能看到make的版本信息为止（插件官方不推荐）
 或者在Eclipse中设置build path，如下图
 ![](./asset/20160119234101.png)
-
 然后进行编译，如果步骤没错，就可以了
 5. 工程设置：
 <br/>
@@ -56,10 +55,8 @@ Eclipse stm32 编辑 编译 下载 调试 （ ST-Link J-Link ） 环境搭建 �
 ### ST-Link
 * 下载
   * 安装STM32 ST-LINK Utility
-            > Windows：官网直接下载安装即可：
-http://www.st.com/web/en/catalog/tools/PF258168
-            > Linux：    需下载源代码自行编译安装 
-              https://github.com/texane/stlink
+
+	> Windows：官网直接[下载安装](http://www.st.com/web/en/catalog/tools/PF258168)即可<br/>Linux：    需[下载源代码](https://github.com/texane/stlink)自行编译安装 
               
   * 配置下载程序（使用ST-link utility ，只能下载程序，不能调试的方法，使用GDB进行调试的在后面）<br/>
 Run-->External tools-->External tools Configurations
