@@ -17,7 +17,7 @@ Eclipse stm32 编辑 编译 下载 调试 （ ST-Link J-Link ） 环境搭建
 # (二)基本安装
 
 1. 安装java、配置环境变量
-2. 解压Eclipse，安装GNU ARM plug in（在Help-->Install New Software）
+2. 解压Eclipse，安装GNU ARM plug in（在Help-->Install New Software）（参见<a target="_blank" href="http://gnuarmeclipse.github.io/plugins/install/">这里</a>）
 ![](./asset/bfecdeff-f3e2-42a8-8e14-c83c6749ccbe.png)
 ![](./asset/d4cec48a-adf6-43ab-aaf7-031dedf341d2.png)
 
