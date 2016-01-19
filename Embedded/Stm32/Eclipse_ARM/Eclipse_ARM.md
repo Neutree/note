@@ -3,10 +3,10 @@ Eclipse stm32 编辑 编译 下载 调试 （ ST-Link J-Link ） 环境搭建
 
 # （一）下载
 
-1.  [下载Eclipse IDE for C/C++ Developers 环境](http://www.eclipse.org/downloads/)
+1. <a target="_blank" href="http://www.eclipse.org/downloads">下载Eclipse IDE for C/C++ Developers 环境</a>
 
-2. [下载GNU ARM Eclipse Plug-in最新版本](http://sourceforge.net/projects/gnuarmeclipse/ ) <br/>
-* [插件wiki](http://gnuarmeclipse.github.io/)
+2. <a target="_blank" href="http://sourceforge.net/projects/gnuarmeclipse">下载GNU ARM Eclipse Plug-in最新版本</a> <br/>
+* <a target="_blank" href="http://gnuarmeclipse.github.io">插件wiki</a>
 
 3. 工具链 ，GNU ARM Eclipse Plug-in 插件支持的工具链有很多，如下<br/>
 ![](./asset/0e2aed80-a2c6-472f-ad8d-38c0196822ef.png)<br/>
