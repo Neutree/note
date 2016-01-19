@@ -28,10 +28,12 @@ Eclipse stm32 编辑 编译 下载 调试 （ ST-Link J-Link ） 环境搭建
 ![](./asset/42f3aaa0-abcb-4234-b789-556de8788ce1.png)
 就是没有make程序的原因，或者填错了名称，如果使用sourcery g++ lite EABI，在工程设置（project-->properties-->C++build-->settings）中改成cs-make就行了,如下图
 ![](./asset/aa2a4913-df82-4bd0-a0fc-0d0ae1cec447.png)
-但是如果是使用不带make程序的工具链，要手动安装，自行搜索安装make的方法（或者使用MinGW或Cygwin（初次接触可自行搜索并了解）进行安装
+但是如果是使用不带make程序的工具链，要手动安装，方法见（一）中的build tool的安装（或者使用MinGW或Cygwin（初次接触可自行搜索并了解）进行安装
 比如cygwin安装这个
 ![](./asset/72849c26-916d-49a1-8fab-74b76e0a0dfb.png)）
-安装完后记得设置环境变量，最终在控制台输入 make -v 能看到make的版本信息为止
+安装完后可以设置环境变量，最终在控制台输入 make -v 能看到make的版本信息为止（插件官方不推荐）
+或者在Eclipse中设置build path，如下图
+
 
 然后进行编译，如果步骤没错，就可以了
 5. 工程设置：
