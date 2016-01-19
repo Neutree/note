@@ -94,11 +94,11 @@ Help-->Eclipse marketplace出现下图
 > 1. 似st-link 只是配置文件不同
 > 2. 使用JLinkGDBServer
 
-###### 参考资料：
-* [GNU ARM Eclipse wiki](http://gnuarmeclipse.github.io/)
-* [J-Link debugging Eclipse plug-in wiki](http://gnuarmeclipse.github.io/debug/jlink/)
+* 参考资料：
+  * [GNU ARM Eclipse wiki](http://gnuarmeclipse.github.io/)
+  * [J-Link debugging Eclipse plug-in wiki](http://gnuarmeclipse.github.io/debug/jlink/)
 
-> 探索中，出现了问题，已经可以用的可以告知我一下么，谢谢啦
+* 探索中，出现了问题，已经可以用的可以告知我一下么，谢谢啦
 
 
 
@@ -110,4 +110,4 @@ Help-->Eclipse marketplace出现下图
 * enum 找不到。
   * ecplipse中enum成员有时会提示找不到，这是eclipse的bug ， 使用project->C/C++Index -> rebuild 就行了
 <br/><br/><br/>
-<kbd>[更多请到这里](http://blog.neucrack.com)</kbd>
+<kbd>[更多文章请到这里](http://blog.neucrack.com)</kbd>
