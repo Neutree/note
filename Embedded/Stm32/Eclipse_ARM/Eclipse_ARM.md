@@ -81,9 +81,12 @@ Executable中的内容是GDB的位置，使用变量，如图；或者绝对地�
 		![](./asset/719af768-df4a-4a35-b2aa-6b8f3852c860.png)
   * 这样st-link调试和下载就基本可以了,效果图<br/>
 		![](./asset/5bbe0e0d-2775-49a3-a2ce-02e47fc44ac3.png)
-  * 关于寄存器查看，可以使用插件
-  * [插件官网：](http://embsysregview.sourceforge.net/)
-  * 安装：<br/>
+  * 关于寄存器查看，可以安装keil的包（GNU ARM Eclipse插件中含有这个插件，只需要手动更新、下载包就行了），也可以使用插件
+ > 使用GNU ARM Eclipse中的包管理：<br/>![](http://gnuarmeclipse.github.io/assets/images/2014/10/PacksFeature.png)
+ > [使用方法](http://gnuarmeclipse.github.io/plugins/packs-manager/)（可能不好下载，多试几次，我第一天下了好多次不行，第二天就可以了。。。。。）
+ > 效果：<br/>![](./asset/debug.png)<br/>![](./asset/debug_memoty.png)
+ > [插件官网：](http://embsysregview.sourceforge.net/)
+ > 安装：<br/>
 Help-->Eclipse marketplace出现下图
 搜索embsysregview,然后点击Install。。然后下一步下一步下一步。。。。<br/>![](./asset/19583255-2058-4e87-8b83-57b6a9dc5608.png)
 
