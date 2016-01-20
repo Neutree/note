@@ -34,7 +34,8 @@ GNU ARM Eclipse 是一个插件，会帮助自动生成makefile，管理芯片�
 比如[ GCC ARM Embedded ](https://launchpad.net/gcc-arm-embedded)（[安装教程](http://gnuarmeclipse.github.io/toolchain/install/)）不要设置环境变量！！！！！！不带make，所以用这个还需要下载一个make功能的软件（识别makefile）
 <br/>或者 [sourcery g++ lite 的EABI版本](http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite) ，不用再下载make，自带，不过名字不是make，是cs-make
 5. [安装build工具](http://gnuarmeclipse.github.io/windows-build-tools/install/)（make等）
-6. [调试器软件安装](http://gnuarmeclipse.github.io/debug/install/)（[J-Link](http://gnuarmeclipse.github.io/debug/jlink/install/)）
+6. [安装芯片包](http://gnuarmeclipse.github.io/plugins/packs-manager/)
+7. [调试器软件安装](http://gnuarmeclipse.github.io/debug/install/)（[J-Link](http://gnuarmeclipse.github.io/debug/jlink/install/)）
 
 # （二）建立工程
 
@@ -97,7 +98,7 @@ Executable中的内容是GDB的位置，使用变量，如图；或者绝对地�
  
 > ①使用GNU ARM Eclipse中的包管理：<br/>![](http://gnuarmeclipse.github.io/assets/images/2014/10/PacksFeature.png)<br/>
 [使用方法](http://gnuarmeclipse.github.io/plugins/packs-manager/)（可能不好下载，多试几次，我第一天下了好多次不行，第二天就可以了。。。。。）<br/>
-效果：<br/>![](./asset/debug.png)<br/>![](./asset/debug_memoty.png)<br/><br/>
+效果：<br/>![](./asset/debug.png)<br/>![](./asset/debug_memory.png)<br/><br/>
 ②使用插件：[插件官网：](http://embsysregview.sourceforge.net/)<br/>
 安装：<br/>
 Help-->Eclipse marketplace出现下图
