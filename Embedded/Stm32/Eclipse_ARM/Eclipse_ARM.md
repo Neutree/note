@@ -2,8 +2,20 @@ Eclipse stm32 编辑 编译 下载 调试 （ ST-Link J-Link ） 环境搭建 �
 =========================
 
 # 说明
+传统的IDE功能强大，特别是调试功能，但是如今，其它软件的发展，大家感觉到传统的IDE用户交互、编辑界面、编码效率不够友好；或者为了降低成本，需要使用开源工具<br/>
+于是，有人选择使用IDE用来调试，用其它编辑器编码（比如source insight 、sublime text3、notepad++、atom、Eclipse等），来提高效率;或者使用其它的工具链来配合编辑器达到自制一个IDE的效果<br/>
+当然还有一些改进得比较好的免费IDE和收费的IDE，比如coocox<br/>
+这里是在Eclipse上编写ARM程序<br/>
+在Eclipse上编写程序方法：<br/>
 
-使用GNU ARM Eclipse plug来简化一系列的操作<br/>所以主要教程来自于<a target="_blank" href="http://gnuarmeclipse.github.io">GNU ARM Eclipse wiki</a><br/>建议直接看这个，下面是安装的时候的笔记
+> 使用GCC、G++、makefile的方式进行手动编码，一切靠自己<br/>
+使用Eclipse+插件（工具链等）的方式来实现<br/>
+当然如果不需要编译就直接用啦<br/>
+
+这里是使用GNU ARM Eclipse plug来简化一系列的操作<br/>
+GNU ARM Eclipse 是一个插件，会帮助自动生成makefile，管理芯片包（现在使用的Keil的包），提供例示程序，以及提供编译、调试的一个框架，只要再安装一些必要的软件（工具链、build工具（比如make）、调试组件）（安装插件时不会一同安装，需要手动安装）就可以进行编译、调试<br/>
+所以主要教程来自于<a target="_blank" href="http://gnuarmeclipse.github.io">GNU ARM Eclipse wiki</a><br/>建议直接看这个<br/>
+下面是安装的时候的笔记
 
 
 
