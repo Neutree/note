@@ -32,7 +32,7 @@ GNU ARM Eclipse 是一个插件，会帮助自动生成makefile，管理芯片�
 4. 工具链 ，GNU ARM Eclipse Plug-in 插件支持的工具链有很多，如下<br/>
 ![](./asset/0e2aed80-a2c6-472f-ad8d-38c0196822ef.png)<br/>
 比如[ GCC ARM Embedded ](https://launchpad.net/gcc-arm-embedded)（[安装教程](http://gnuarmeclipse.github.io/toolchain/install/)）不要设置环境变量！！！！！！不带make，所以用这个还需要下载一个make功能的软件（识别makefile）
-<br/>或者 [sourcery g++ lite 的EABI版本](http://www.codesourcery.com/sgpp/lite/arm/portal/subscription?@template=lite) ，不用再下载make，自带，不过名字不是make，是cs-make
+<br/>或者 [sourcery g++ lite 的EABI版本](https://sourcery.mentor.com/sgpp/lite/arm/portal/subscription3053) ，不用再下载make，自带，不过名字不是make，是cs-make
 5. [安装build工具](http://gnuarmeclipse.github.io/windows-build-tools/install/)（make等）
 6. [安装芯片包](http://gnuarmeclipse.github.io/plugins/packs-manager/)
 7. [调试器软件安装](http://gnuarmeclipse.github.io/debug/install/)（[J-Link](http://gnuarmeclipse.github.io/debug/jlink/install/)）
