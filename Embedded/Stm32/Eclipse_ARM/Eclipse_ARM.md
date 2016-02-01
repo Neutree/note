@@ -125,7 +125,7 @@ Help-->Eclipse marketplace出现下图
 
 # 其它问题
 
-* enum 找不到。
+* 有时候可能会碰到enum 找不到。
   * ecplipse中enum成员有时会提示找不到，这是eclipse的bug ， 使用project->C/C++Index -> rebuild 就行了
 <br/><br/><br/>
 <kbd>[更多文章请到这里](http://blog.neucrack.com)</kbd>
