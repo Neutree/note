@@ -116,7 +116,7 @@ Help-->Eclipse marketplace出现下图
   * [GNU ARM Eclipse wiki](http://gnuarmeclipse.github.io/)
   * [J-Link debugging Eclipse plug-in wiki](http://gnuarmeclipse.github.io/debug/jlink/)
 
-* 探索中，出现了问题，已经可以用的可以告知我一下么，谢谢啦
+* 暂时用st-link，后面用的时候再加上来，欢迎大家来一起写
 
 
 
