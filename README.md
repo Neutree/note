@@ -20,7 +20,7 @@ you are welcome to contribute to it！<br/>
 <details class="menu" open>
       <summary>列表</summary>
       <ul>
-          <li><a href="#">* [Eclipse stm32 编辑 编译 下载 调试 （ ST-Link J-Link ） 环境搭建 （使用GNU ARM Eclipse）](https://github.com/Neutree/note/blob/master/Embedded/Stm32/Eclipse_ARM/Eclipse_ARM.md)</a></li>
+          <li><a href="#">[Eclipse stm32 编辑 编译 下载 调试 （ ST-Link J-Link ） 环境搭建 （使用GNU ARM Eclipse）](https://github.com/Neutree/note/blob/master/Embedded/Stm32/Eclipse_ARM/Eclipse_ARM.md)</a></li>
       </ul>
 </details>
 
