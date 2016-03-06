@@ -5,6 +5,8 @@ you are welcome to contribute to it！<br/>
 （一些知识的总结，欢迎补充）
 
 # 导航
+(使用Chrome体验更佳)
+
 ## [编码工具](https://github.com/Neutree/note/tree/master/Code_Tool)
 > ### [工具软件]()
 <details class="menu" open>
