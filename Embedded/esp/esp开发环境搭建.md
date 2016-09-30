@@ -7,7 +7,7 @@ esp开发环境搭建
 
 ## (一） 安装docker
 
-[按照这个步骤进行安装-->   https://docs.docker.com/engine/installation/](https://docs.docker.com/engine/installation/)
+<a href="https://docs.docker.com/engine/installation/" target="_blank">按照这个步骤进行安装-->   https://docs.docker.com/engine/installation/</a>
 
 ## (二) 将集成了开发环境的docker镜像拉取到本地
 
