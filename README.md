@@ -26,6 +26,14 @@ you are welcome to contribute to it！<br/>
       </ul>
 </details>
 
+> ### [esp](https://github.com/Neutree/note/tree/master/Embedded/esp)
+<details class="menu" open>
+      <summary>列表</summary>
+      <ul>
+          <li><a href="#">[esp开发环境搭建(esp8266丶esp32等)](https://github.com/Neutree/note/blob/master/Embedded/esp/esp开发环境搭建.md)</a></li>
+      </ul>
+</details>
+
 
 # [更多文章](http://neucrack.com/blog)
 
