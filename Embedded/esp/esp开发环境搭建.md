@@ -2,7 +2,7 @@ esp开发环境搭建
 ====
 
 # 一：使用docker
-> 请先了解[什么是docker](../../docker/doc/什么是docker涅.md)
+> 请先了解[什么是docker](../../docker/doc/what-docker.md)
 
 
 ## (一） 安装docker
