@@ -114,19 +114,21 @@ esptool -cc esp8266 -cp /dev/ttyUSB0 -cd nodemcu -ca 0x00000 -cf 00000.bin -ca 0
 > 注意在下载的时候串口不能被占用哦～（*比如串口助手正在使用串口*）否则会下载失败滴
 * 下载完成之后按复位键(<kbd>EN</kbd>脚失能后使能)即可运行
 * 在宿主机或者容器内打开串口助手查看(容器内默认没有安装串口助手哦)，有输出信息。串口助手可以使用minicom,也可以在宿主机上使用带GUI的软件
-> **minicom安装使用**
-安装
-```bash
+
+  > **minicom安装使用**
+  
+  > 安装
+  > ```bash
 sudo apt-get install minicom
-```
-设置（*设置好了记得保存设置*）
-```bash
+  > ```
+  > 设置（*设置好了记得保存设置*）
+  > ```bash
 sudo minicom -s
-```
-运行
-```bash
+  > ```
+  > 运行
+  > ```bash
 sudo minicom
-```
+  > ```
 
 
 # 二：使用eclipse
