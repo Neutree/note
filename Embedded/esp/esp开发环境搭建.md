@@ -47,7 +47,7 @@ docker attach 容器名(或者ID号)
 
 使用SDK：
 ```bash
-docker run -ti --name esp8266-builder -e SDK_BASE=/build/esp8266/ESP_RTOS_SDK/ --device /dev/ttyUSB0:/dev/ttyUSB0 -v /data/esp:/build neucrack/esp-build /bin/bash
+sudo docker run -ti --name esp8266-builder -e SDK_PATH=/build/ESP8266_RTOS_SDK/ -e BIN_PATH=/build/bin --device /dev/ttyUSB0:/dev/ttyUSB0 -v /data/esp/esp8266:/build neucrack/esp-build /bin/bash
 ```
 > * `-name`指定运行容器的名字
 > * `-e`添加环境变量（具体的环境变量由SDK决定，阅读SDK的使用说明即可，将SDK下载或者克隆到相应文件夹下，比如这里`/build/esp8266/ESP_RTOS_SDK/`）
@@ -100,7 +100,7 @@ docker run -ti --name esp32-builder -e IDF_PATH=/build/esp32/esp-idf --device /d
 然后使用下载工具下载到模块，
 eg:
 ```bash
-esptool -cc esp8266 -cp /dev/ttyUSB0 -cd nodemcu -ca 0x00000 -cf 00000.bin -ca 0x40000 -cf 40000.bin
+ esptool -cc esp8266 -cp /dev/ttyUSB0 -cd nodemcu -ca 0x00000 -cf $BIN_PATH/eagle.flash.bin -ca 0x20000 -cf $BIN_PATH/eagle.irom0text.bin
 ```
 > * 参数使用`man esptool`进行查看。二进制文件文件名及地址参考SDK说明
 > * 注意在下载的时候串口不能被占用哦～（*比如串口助手正在使用串口*）否则会下载失败滴
