@@ -2,21 +2,12 @@
     "plugins": [
         "github",
         "splitter",
-        "edit-link",
+        "-edit-link",
         "download-pdf"
     ],
     "pluginsConfig": {
         "github": {
             "url": "htts://www.github.com/neutree/note"
-        },
-        "sharing": {
-            "facebook": true,
-            "twitter": true,
-            "google": false,
-            "weibo": true,
-            "instapaper": true,
-            "vk": false,
-            "all": "facebook,google,twitter,weibo,instapaper"
         }
     }
 }
