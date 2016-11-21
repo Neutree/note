@@ -2,5 +2,9 @@
     "plugins": [
         "github"
     ],
-    "pluginsConfig": {}
+    "pluginsConfig": {
+        "github": {
+            "url": "htts://www.github.com/neutree/note"
+        }
+    }
 }
