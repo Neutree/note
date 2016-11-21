@@ -7,7 +7,7 @@
     ],
     "pluginsConfig": {
         "github": {
-            "url": "htts://www.github.com/neutree/note"
+            "url": "https://www.github.com/neutree/note"
         },
         "sharing": {
             "facebook": true,
