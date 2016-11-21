@@ -17,6 +17,11 @@
             "instapaper": true,
             "vk": false,
             "all": "facebook,google,twitter,weibo,instapaper"
+        },
+        "download-pdf": {
+            "base": "",
+            "label": "Download PDF",
+            "multilingual": false
         }
     }
 }
