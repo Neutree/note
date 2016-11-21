@@ -1,6 +1,7 @@
 {
     "plugins": [
-        "github"
+        "github",
+        "splitter"
     ],
     "pluginsConfig": {
         "github": {
