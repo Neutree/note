@@ -2,7 +2,8 @@
     "plugins": [
         "github",
         "splitter",
-        "edit-link"
+        "edit-link",
+        "download-pdf"
     ],
     "pluginsConfig": {
         "github": {
