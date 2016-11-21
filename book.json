@@ -1,24 +1,11 @@
 {
     "plugins": [
-        "github"
+        "github",
+        "edit-link"
     ],
     "pluginsConfig": {
         "github": {
             "url": "https://www.github.com/neutree/note"
-        },
-        "sharing": {
-            "facebook": true,
-            "twitter": true,
-            "google": false,
-            "weibo": true,
-            "instapaper": true,
-            "vk": false,
-            "all": "facebook,google,twitter,weibo,instapaper"
-        },
-        "download-pdf": {
-            "base": "",
-            "label": "Download PDF",
-            "multilingual": false
         }
     }
 }
