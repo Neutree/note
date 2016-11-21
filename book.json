@@ -1,7 +1,8 @@
 {
     "plugins": [
         "github",
-        "splitter"
+        "splitter",
+        "edit-link"
     ],
     "pluginsConfig": {
         "github": {
