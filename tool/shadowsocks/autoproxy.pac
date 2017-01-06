@@ -1960,7 +1960,10 @@ var rules = [
             "^[\\w\\-]+:\\/+(?!\\/)(?:[^\\/]+\\.)?zvereff\\.com", 
             "^https://upload\\.wikimedia\\.org", 
             "^https://zh\\.wikipedia\\.org", 
-            "^https://zh\\.m\\.wikipedia\\.org"
+            "^https://zh\\.m\\.wikipedia\\.org",
+            "^[\\w\\-]+:\\/+(?!\\/)(?:[^\\/]+\\.)?gitbook\\.com", 
+            "^[\\w\\-]+:\\/+(?!\\/)(?:[^\\/]+\\.)?github\\.com", 
+            "^[\\w\\-]+:\\/+(?!\\/)(?:[^\\/]+\\.)?amazonaws\\.com"
         ], 
         [
             "*.lsxszzg.com*", 
