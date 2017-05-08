@@ -9,4 +9,4 @@ backup pi rapidly and easily
 
 # files
 backup_pi_netkeeper.img.xz: 
-带netkeeper的openwrt备份,WiFi:Pi_PASSWD12345678,IP:192.168.2.1,ssh port:22,passwd:12345678
+带重庆netkeeper的openwrt备份,WiFi:Pi_PASSWD12345678,IP:192.168.2.1,ssh port:22,passwd:12345678
