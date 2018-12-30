@@ -1,4 +1,5 @@
 #!/bin/bash
+set -o errexit
 ######################################################
 ################## TODO: settings#####################
 src_root_device=/dev/sdc2 #/dev/root
@@ -9,7 +10,7 @@ green="\e[32;1m"
 normal="\e[0m"
 
 echo -e "${green} \ninstall software\n ${normal}"
-sudo apt-get install -y dosfstools dump parted kpartx
+sudo apt-get install -y dosfstools dump parted kpartx bc
 echo -e "${green} \ninstall software complete\n ${normal}"
 
 echo -e "${green}create image now\n ${normal}"
