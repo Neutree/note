@@ -8,3 +8,4 @@ pusher.com
 pusherapp.com
 googletagmanager.com
 cdn.sstatic.net
+google-analytics.com
