@@ -1,6 +1,6 @@
 /**
  * genpac 2.1.0 https://github.com/JinnLynn/genpac
- * Generated: 2020-11-10 14:32:14
+ * Generated: 2020-11-11 11:05:14
  * GFWList Last-Modified: 2020-10-21 00:11:38
  * GFWList From: online[https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt]
  */
@@ -14,6 +14,7 @@ var rules = [
             "githubusercontent.com",
             "google-analytics.com",
             "googletagmanager.com",
+            "jquery.com",
             "pusher.com",
             "pusherapp.com",
             "sstatic.net",
