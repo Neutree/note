@@ -5,8 +5,10 @@
 set -o errexit
 ######################################################
 ################## TODO: settings#####################
-src_root_device=/dev/root #/dev/root
-src_boot_device=/dev/mmcblk0p1 #/dev/mmcblk0p1
+src_root_device=/dev/root       #/dev/root
+src_boot_device=/dev/mmcblk0p1  #/dev/mmcblk0p1
+src_root_device_blkid=/dev/mmcblk0p2
+src_boot_device_blkid=/dev/mmcblk0p1
 backup_on_pi=1                 # 1: backup on pi, 0: backuo on PC
 ######################################################
 
@@ -73,6 +75,13 @@ if [[ "${backup_on_pi}x" == "1x" ]]; then
 else
   sudo cp -rfp ${mount_path}/* /media/img_to
 fi
+
+echo -e "${green}update partUUID of boot${normal}"
+uuid_boot_src=`blkid -o export ${src_boot_device_blkid} | grep PARTUUID`
+uuid_boot_dst=`blkid -o export ${boot_device} | grep PARTUUID`
+sudo sed -i "s/$uuid_boot_src/$uuid_boot_dst/g" /media/img_to/cmdline.txt
+
+echo -e "${green}umount /media/img_to${normal}"
 sudo umount /media/img_to
 
 sudo chattr +d backup.img #exclude img file from backup(support in ext* file system)
@@ -89,6 +98,14 @@ sudo mount -t ext4 $root_device /media/img_to
 cd /media/img_to
 echo -e "${green}copy /${normal}"
 sudo dump -0auf - ${mount_path} | sudo restore -rf -
+
+echo -e "${green}update partUUID of root${normal}"
+
+uuid_root_src=`blkid -o export ${src_root_device_blkid} | grep PARTUUID`
+uuid_root_dst=`blkid -o export ${root_device} | grep PARTUUID`
+sudo sed -i "s/$uuid_root_src/$uuid_root_src/g" /media/img_to/etc/fstab
+sudo sed -i "s/$uuid_boot_src/$uuid_boot_dst/g" /media/img_to/etc/fstab
+
 cd
 sudo umount /media/img_to
 
