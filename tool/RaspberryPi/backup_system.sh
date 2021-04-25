@@ -6,9 +6,20 @@ src_root_device=/dev/root       #/dev/root
 src_boot_device=/dev/mmcblk0p1  #/dev/mmcblk0p1
 src_root_device_blkid=/dev/mmcblk0p2
 src_boot_device_blkid=/dev/mmcblk0p1
+
+# backup on PC is recommend, 
 backup_on_pi=1                 # 1: backup on pi, 0: backuo on PC
-copy_use_rsync=0
+# !!!!!if back on PI, you should umount all your disk devices like USB disk or add exclude here
+# my_exlude='--exclude relative_path1 --exclude relative_path2'
+my_exlude='--exclude home/pi/data/raid'
 ######################################################
+
+if [ "${backup_on_pi}x" == "1x" ]; then
+  # !!!!!if back on PI, it's better to use rsync
+  copy_use_rsync=1               # 1: use rsync to copy files, 0: use dump command to copy files
+else
+  copy_use_rsync=0
+fi
 
 green="\e[32;1m"
 normal="\e[0m"
@@ -108,14 +119,12 @@ if [ "x${mount_path}" == "x" ];then
 fi
 sudo mount -t ext4 $root_device /media/img_to
 
-cd /media/img_to
 echo -e "${green}copy /${normal}"
 if [[ "${copy_use_rsync}x" == "1x" ]]; then
   if [ "${backup_on_pi}x" == "1x" ]; then
     curr_dir=`pwd`
     backup_img_exclude="--exclude '${curr_dir}/backup.img'"
     backup_img_exclude=`echo ${backup_img_exclude} | sed -e "s/\///"`
-    echo 
   else
     backup_img_exclude=""
   fi
@@ -138,14 +147,20 @@ if [[ "${copy_use_rsync}x" == "1x" ]]; then
     --exclude 'tmp/' \
     --exclude 'lost\+found/' \
     --exclude 'var/lib/apt/lists/' \
+    $my_exlude \
     $backup_img_exclude \
     ${mount_path} /media/img_to
 else
   # exclude backup.img
   sudo chattr +d backup.img #exclude img file from backup(support in ext* file system)
   # echo "if 'Operation not supported while reading flags on backup.img' comes up, ignore it"
-
-  sudo dump -0auf - ${mount_path} | sudo restore -rf -
+cd /media/img_to
+tmp_inode=`stat ${mount_path}/tmp --printf "%i"`
+lost_found_inode=`stat ${mount_path}/lost\+found/ --printf "%i"`
+media_inode=`stat ${mount_path}/media --printf "%i"`
+mnt_inode=`stat ${mount_path}/mnt --printf "%i"`
+apt_inode=`stat ${mount_path}/var/lib/apt/lists --printf "%i"`
+sudo dump -e ${tmp_inode},${lost_found_inode},${media_inode},${mnt_inode},${apt_inode} -0auf - ${mount_path} | sudo restore -rf -
 fi
 
 sync
