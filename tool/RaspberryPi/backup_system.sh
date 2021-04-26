@@ -194,12 +194,8 @@ if [[ "${copy_use_rsync}x" == "1x" ]]; then
   sudo rsync --force -rltWDEgop --delete --stats --progress \
     $EXCLUDE_SWAPFILE \
     --exclude '.gvfs' \
-    --exclude 'dev/' \
     --exclude 'media/' \
     --exclude 'mnt/' \
-    --exclude 'proc/' \
-    --exclude 'run/' \
-    --exclude 'sys/' \
     --exclude 'tmp/' \
     --exclude 'lost\+found/' \
     --exclude 'var/lib/apt/lists/' \
@@ -237,14 +233,10 @@ echo -e "${green}update partUUID complete${normal}"
 
 # create temp dirs
 sudo mkdir -p /media/img_to_root/tmp
-sudo mkdir -p /media/img_to_root/proc
 sudo mkdir -p /media/img_to_root/media
 sudo mkdir -p /media/img_to_root/mnt
 sudo mkdir -p /media/img_to_root/tmp
 sudo chmod 777 /media/img_to_root/tmp
-sudo mkdir -p /media/img_to_root/sys
-sudo mkdir -p /media/img_to_root/run
-sudo mkdir -p /media/img_to_root/dev
 sudo mkdir -p /media/img_to_root/var/lib/apt/lists
 
 sync
