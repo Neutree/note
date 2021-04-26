@@ -5,9 +5,9 @@ backup pi rapidly and easily
 * edit backup_system.sh's part TODO,
 * run
 
-> restore use `dd if=...img of=/dev/sd* bs=1k`
+> restore use `dd if=...img of=/dev/sd* bs=1M status=progress`
 
-more see http://www.jianshu.com/p/c6055f9545fd
+more see https://neucrack.com/p/107
 
 # files
 backup_pi_netkeeper.img.xz: 
