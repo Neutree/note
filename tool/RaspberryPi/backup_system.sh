@@ -36,8 +36,8 @@ src_root_device=/dev/sde2         #/dev/root
 src_boot_device_blkid=/dev/sde1   #/dev/mmcblk0p1
 src_root_device_blkid=/dev/sde2   #/dev/mmcblk0p2
 
+root_backup_size=1.3              # root backup size, 1 means the same as used size
 os_arch_manjaro=0                 # for system Arch or Manjaro, else ubuntu/debian
-# backup on PC is recommend, 
 backup_on_pi=0                 # 1: backup on pi(maybe not well supported), 0: backuo on PC (recommend)
 # !!!!!if back on PI, it's better to use rsync
 copy_use_rsync=0               # 1: use rsync to copy files, 0: use dump command to copy files
@@ -107,7 +107,7 @@ echo -e "${green}create image now\n ${normal}"
 used_size=`df -P | grep $src_root_device | awk '{print $3}'`
 boot_size=`df -P | grep $src_boot_device | awk '{print $2}'`
 if [ "x${used_size}" != "x" ] && [ "x${boot_size}" != "x" ];then
-        count=`echo "${used_size}*1.1/1024+${boot_size}/1024+2"|bc|awk '{printf("%.0f",$1)}'`
+        count=`echo "${used_size}*${root_backup_size}/1024+${boot_size}/1024+2"|bc|awk '{printf("%.0f",$1)}'`
 else
         echo "device $src_root_device or $src_boot_device not exist in `df -P`,mount first"
         exit 0;
