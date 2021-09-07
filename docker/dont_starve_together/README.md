@@ -1,4 +1,9 @@
+饥荒 专有服务器 Don't Starve Together (DST) dedicated server docker 镜像
+=====
 
+[看博客文章](https://neucrack.com/p/379)
+
+[docker 源码](https://github.com/Neutree/note/tree/master/docker/dont_starve_together)
 
 ## 获得 docker 镜像
 
@@ -90,6 +95,8 @@ cd MyDediServer
 
 docker run --name dst_server_1 -v `pwd`:/root/.klei/DoNotStarveTogether/room -p 10889:10889 -p 11000:11000 -p 11001:11001 dst_server
 ```
+
+如果是从`docker pull neucrack/dst_server` 获取的则需要替换最后的`dst_server`为`neucrack/dst_server`
 
 
 run 命令会自动启动服务器， 可以看 log 是否成功， 也可以在游戏大厅搜索设置的名字， 成功后 `ctrl+c` 退出
