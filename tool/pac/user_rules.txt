@@ -1,6 +1,7 @@
 
 github.com
 githubusercontent.com
+copilot-telemetry.githubusercontent.com
 travis-ci.org
 stripe.com
 stripe.network
@@ -11,3 +12,6 @@ cdn.sstatic.net
 google-analytics.com
 jquery.com
 gfwstable.icu
+arxiv.org
+miobt.com
+
