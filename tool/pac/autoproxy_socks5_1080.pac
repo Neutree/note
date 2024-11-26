@@ -1,7 +1,7 @@
 /**
  * genpac 2.1.0 https://github.com/JinnLynn/genpac
- * Generated: 2024-09-27 10:08:50
- * GFWList Last-Modified: 2024-09-17 23:45:49
+ * Generated: 2024-11-26 14:51:31
+ * GFWList Last-Modified: 2024-10-07 23:39:43
  * GFWList From: local[/home/neucrack/data/projects/note/tool/pac/gfwlist.txt]
  */
 
@@ -11,6 +11,7 @@ var rules = [
         [],
         [
             "arxiv.org",
+            "chatgpt.com",
             "gfwstable.icu",
             "github.com",
             "githubusercontent.com",
@@ -18,6 +19,8 @@ var rules = [
             "googletagmanager.com",
             "jquery.com",
             "miobt.com",
+            "oaistatic.com",
+            "oaiusercontent.com",
             "pusher.com",
             "pusherapp.com",
             "sstatic.net",
@@ -1626,6 +1629,7 @@ var rules = [
             "fa.gov.tw",
             "facebook.br",
             "facebook.com",
+            "facebook.de",
             "facebook.design",
             "facebook.hu",
             "facebook.in",
@@ -3364,6 +3368,7 @@ var rules = [
             "meshrep.com",
             "mesotw.com",
             "messenger.com",
+            "meta.com",
             "metacafe.com",
             "metafilter.com",
             "metart.com",
@@ -5173,6 +5178,7 @@ var rules = [
             "torrentproject.se",
             "torrenty.org",
             "torrentz.eu",
+            "tortoisesvn.net",
             "torvpn.com",
             "totalvpn.com",
             "toutiaoabc.com",
